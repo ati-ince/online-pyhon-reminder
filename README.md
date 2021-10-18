@@ -5,11 +5,11 @@ just reminder for grammar
 a, b, c = X, Y, Z
 
 ### Access element of data structure
-a[n] -> array | mutable | iterable
-a[key] -> dict | mutable | iterable
+a[n] -> array | mutable | iterable <\b>
+a[key] -> dict | mutable | iterable <\b>
 
-'abc' , b'abc', u'abc' -> string, byte string, unicode string
-str[n] -> single string element | immutable | iterable
+'abc' , b'abc', u'abc' -> string, byte string, unicode string <\b>
+str[n] -> single string element | immutable | iterable <\b>
 
 ## REF
 1. https://books.goalkicker.com/PythonBook/
