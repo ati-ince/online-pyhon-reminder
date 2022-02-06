@@ -12,7 +12,7 @@ class ThreadObj(Thread):
     '''
     def __init__(self, group=None, target=None, name=None, args=..., kwargs=None, *, daemon=False):
         super().__init__(group, target, name, args, kwargs, daemon=daemon)
-        self.e = Event()
+        self.e = Event() #beginning is false as expected !!!
         print('** event obj state:', self.e.is_set())
         self.e.set()
 
