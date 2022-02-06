@@ -1,29 +1,19 @@
-from builtins import print
 from threading import Thread, Event
-
 import time
-
-class MyThread(Thread):
-    def __init__(self, group=None, target=None, name=None, args=..., kwargs=None, *, daemon=None):
-        super().__init__(group, target, name, args, kwargs, daemon=daemon)
-
-    def start(self):
-        print('Thread obj START:',self.name)
-
-    def run(self):
-        print('Thread obj RUN:',self.name)
-
-
-thread = MyThread(name='MTF')
-
-thread.start()
-
 
 
 class ThreadObj(Thread):
+    '''
+    start -> clear -> wait can control the thread lifetime and activation
+    set: flag:True control event 
+    clear: flag:False
+    wait: blocking function until flag:True -> useful for event/thread
+    is_set: chek flag state
+    '''
     def __init__(self, group=None, target=None, name=None, args=..., kwargs=None, *, daemon=False):
         super().__init__(group, target, name, args, kwargs, daemon=daemon)
         self.e = Event()
+        print('** event obj state:', self.e.is_set())
         self.e.set()
 
     def run(self):
