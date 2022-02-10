@@ -13,6 +13,10 @@ class MyClass(Thread):
         self.thread_check = Timer(self.t_check,self.handle_check)
         self.thread_referancing = Timer(self.t_referancing,self.handle_referancing)
 
+        ## start  a lock (er) here to use it.  as a global object 
+
+        #define common socket here !!!!
+
     def handle_alive(self):
         self.alive_msg()
         self.thread_alive = Timer(self.t_alive,self.handle_alive)
@@ -39,6 +43,7 @@ class MyClass(Thread):
         print('Robo ref!!!')
 
     def run(self) -> None:
+        
         self.thread_alive.start()
         self.thread_check.start()
         self.thread_referancing.start()
