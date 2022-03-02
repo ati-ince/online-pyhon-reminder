@@ -1,0 +1,4 @@
+@startuml Document Name
+skinparam Style strictuml
+A -> B : hello
+@enduml
