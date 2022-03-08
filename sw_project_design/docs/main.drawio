@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="M85WTsVOoSQGxKqNbcje" name="Flow-development">
-        <mxGraphModel dx="766" dy="577" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="766" dy="386" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -13,15 +13,15 @@
                 <mxCell id="14" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="3" target="13" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="3" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;- Create unit test script&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;- Create project parts, main codes&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;-&amp;nbsp;start script for testing code before commit (run linter and unit test etc)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
-                    <mxGeometry x="44" y="520" width="205" height="60" as="geometry"/>
+                <mxCell id="3" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;- Create unit test script&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;- Create project parts, main codes structure&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;-&amp;nbsp;start script for testing code before commit (run linter and unit test etc)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="27" y="520" width="239" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="11" value="" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="7" target="3" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="131.5" y="500" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="7" value="&lt;span&gt;Prepare virtual env, install all package needs&lt;/span&gt;&lt;span&gt;Prepare virtual env, install all necessay packages&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;align=left;" parent="1" vertex="1">
+                <mxCell id="7" value="&lt;span&gt;Prepare virtual env, install all package needs&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;align=left;" parent="1" vertex="1">
                     <mxGeometry x="46.5" y="410" width="200" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="13" value="check IDE with git and virt env, unit test,&amp;nbsp; some scripts and project from beginning. Make sure everythings allright" style="whiteSpace=wrap;html=1;align=left;rounded=1;strokeWidth=2;" parent="1" vertex="1">
@@ -86,7 +86,7 @@
                         <mxPoint x="626.5" y="440" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="68" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="65">
+                <mxCell id="68" value="" style="edgeStyle=none;html=1;" parent="1" source="65" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="386.5" y="630" as="targetPoint"/>
                     </mxGeometry>
@@ -94,16 +94,16 @@
                 <mxCell id="65" value="&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;do any code update and extentions&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;align=left;" parent="1" vertex="1">
                     <mxGeometry x="329" y="520" width="115" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="69" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1">
+                <mxCell id="69" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="386.5" y="690" as="sourcePoint"/>
                         <mxPoint x="386.5" y="740" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="70" value="update docs, run auto doc generation (pdoc)&amp;nbsp;" style="whiteSpace=wrap;html=1;align=left;rounded=1;strokeWidth=2;" vertex="1" parent="1">
+                <mxCell id="70" value="update docs, run auto doc generation (pdoc)&amp;nbsp;" style="whiteSpace=wrap;html=1;align=left;rounded=1;strokeWidth=2;" parent="1" vertex="1">
                     <mxGeometry x="329" y="740" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="71" value="- update and run unit test&lt;br&gt;- run linter and make sure all codes OK (plint)" style="whiteSpace=wrap;html=1;align=left;rounded=1;strokeWidth=2;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" vertex="1" parent="1">
+                <mxCell id="71" value="- update and run unit test&lt;br&gt;- run linter and make sure all codes OK (plint)" style="whiteSpace=wrap;html=1;align=left;rounded=1;strokeWidth=2;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" parent="1" vertex="1">
                     <mxGeometry x="323.5" y="630" width="131" height="60" as="geometry"/>
                 </mxCell>
             </root>
